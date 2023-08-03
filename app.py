@@ -185,7 +185,7 @@ def main():
         submit_button = st.button("Predict satisfaction score")
         if submit_button:
             result = predict_satisfaction_score(data)
-            st.write(f"Customer satisfaction score: {result+1}")
+            st.write(f"Customer satisfaction score(out of 5, higher the better): {result+1}")
 
 if __name__ == "__main__":
     main()
